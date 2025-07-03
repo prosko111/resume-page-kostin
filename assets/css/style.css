@@ -751,6 +751,9 @@ body {
     color: var(--gray-color);
     margin-bottom: 0;
     line-height: 1.7;
+    min-height: 85px;
+    display: flex;
+    align-items: flex-start;
 }
 
 .project-achievements {
