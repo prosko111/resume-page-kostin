@@ -741,15 +741,14 @@ body {
 
 .project-content {
     padding: 2rem;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    gap: 1rem;
 }
 
 .project-description {
     color: var(--gray-color);
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
     line-height: 1.7;
     min-height: 85px;
     display: flex;
@@ -757,11 +756,12 @@ body {
 }
 
 .project-achievements {
-    margin-bottom: 0;
+    margin-bottom: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
     min-height: 140px;
+    flex-grow: 1;
 }
 
 .achievement-item {
@@ -784,7 +784,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    padding-top: 0;
+    margin-top: auto;
 }
 
 /* Contact Section */
