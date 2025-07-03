@@ -1,0 +1,99 @@
+{
+  "name": "alexey-kostin-portfolio",
+  "version": "1.0.0",
+  "description": "Современное портфолио Lead Performance QA Engineer Алексея Костина",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=8080 --open=/index.html",
+    "dev": "live-server --port=3000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o assets/css/style.min.css assets/css/style.css",
+    "minify-js": "terser assets/js/main.js -o assets/js/main.min.js --compress --mangle",
+    "serve": "python -m http.server 8000",
+    "validate": "html-validate index.html",
+    "lint:css": "stylelint assets/css/*.css",
+    "lint:js": "eslint assets/js/*.js",
+    "test": "echo \"No tests specified yet\" && exit 0",
+    "deploy": "gh-pages -d .",
+    "lighthouse": "lighthouse http://localhost:8080 --view",
+    "optimize": "npm run build && npm run lighthouse"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[username]/resume-page-kostin.git"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "qa-engineer",
+    "performance-testing",
+    "lead-qa",
+    "jmeter",
+    "automation",
+    "frontend",
+    "responsive",
+    "javascript",
+    "css3",
+    "html5"
+  ],
+  "author": {
+    "name": "Алексей Костин",
+    "email": "prosko111@yandex.ru",
+    "url": "https://t.me/prosko111"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/[username]/resume-page-kostin/issues"
+  },
+  "homepage": "https://[username].github.io/resume-page-kostin/",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.57.0",
+    "gh-pages": "^6.1.1",
+    "html-validate": "^8.9.1",
+    "lighthouse": "^11.5.0",
+    "live-server": "^1.2.2",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0",
+    "terser": "^5.27.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "config": {
+    "port": 8080
+  },
+  "metadata": {
+    "technologies": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "Font Awesome",
+      "Google Fonts",
+      "AOS Library"
+    ],
+    "features": [
+      "Responsive Design",
+      "Smooth Animations",
+      "Performance Optimized",
+      "SEO Friendly",
+      "Accessibility",
+      "Mobile First"
+    ],
+    "sections": [
+      "Hero",
+      "About",
+      "Experience",
+      "Skills", 
+      "Projects",
+      "Contact"
+    ]
+  }
+}
